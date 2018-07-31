@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Syncopate");
+@import url("https://fonts.googleapis.com/css?family=Terminal+Dosis");
+
+body {
+  font-family:"Termianl Dosis", monospace;
+}
+
 #menubar{
     margin: 0;
     font-size: 25px;
@@ -5,13 +12,14 @@
     background-color:transparent;
     font-color:black;
     position:left;
+    width: 200px;
 }
 
-ul {
+#menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 150px;
+    width: 10%;
     background-color: white;
     position: fixed;
     height: 100%;
@@ -34,4 +42,34 @@ li a.active {
 li a:hover:not(.active) {
     background-color: transparent;
     color: #A8D0E6;
+}
+
+h1 {
+  font-family:"Syncopate", monospace;
+  margin-left: 30px;
+}
+
+#rem {
+  padding-left: 400px;
+  padding-top: 50px;
+}
+
+ul.a {
+    list-style-type: circle;
+    width: 300px;
+    padding-left: 350px;
+}
+
+#quotes {
+  padding-left: 400px:
+  text-align: right;
+}
+
+#motivation {
+  padding-left: 800px;
+}
+
+#videos {
+  size: 50%;
+  padding-left: 800px;
 }
