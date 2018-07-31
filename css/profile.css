@@ -1,7 +1,8 @@
-p{
+body{
   border-style:solid;
   border-width:8px;
-  font-size:40px;
+  font-size:30px;
+  color:pink;
 }
 h1{
   font-size:40px;
@@ -9,18 +10,6 @@ h1{
 }
 
 h2{
-  font-size:30px;
+  font-size:35px;
+  color:black;
 }
-
-function saveEdits(){
-var editElem = documnet.getElementById("edit");
-var userVersion = editElem.innerHTML;
-localstorage.userEdits= userVersion;
-document.getElementById("update").innerHTML="Edits saved!";
-}
-function checkEdits(){
-  if(localStorage.userEdits!=null)
-  document.getElementById("edit").innerHTML=localStorage.userEdits;
-}
-var editElem = document.getElementById("edit");
-editElem.contentEditable="false";
