@@ -12,18 +12,21 @@ body {
     background-color:transparent;
     font-color:black;
     position:left;
-    width: 10%;
+    width: 150px;
+    font-family:"Dosis", monospace;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 20%;
+    width: auto;
+    white-space:nowrap;s
     background-color: white;
     position: fixed;
     height: 100%;
     overflow: auto;
+    font-family:"Dosis", monospace;
 }
 
 li a {

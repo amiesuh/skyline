@@ -11,7 +11,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 10%;
+    width: 150px;
     background-color: white;
     position: fixed;
     height: 100%;
@@ -35,4 +35,3 @@ li a:hover:not(.active) {
     background-color: transparent;
     color: #A8D0E6;
 }
-
