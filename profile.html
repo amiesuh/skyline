@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>SkyLine</title>
+<link rel="stylesheet" type="text/css" href="css/profile.css">
 <script src = "js/profile.js" type="text/javascript"></script>
 
 </head>
@@ -8,15 +9,24 @@
 <body>
 
 <a href="news.html"><h1>Skyline</h1></a>
+<h2><center>Profile</center></h2>
+<p>
+
+<img src="http://www.centro-renacer.org/wp-content/uploads/2016/06/blank-profile.png">
+<div id="edit" contenteditable="true">
+Name:</div>
+
+<input type="button" value="save my edits" onclick="saveEdits()"/>
+<div id="update">-Edit the text and click to save for next time</div>
+<body onload="checkEdits()">
+
 
 <div id="edit" contenteditable="true">
   Here is the element's original content
 </div>
 
-
-
-
 </body>
+</p>
 
 
 
