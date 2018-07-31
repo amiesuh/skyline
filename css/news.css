@@ -5,7 +5,7 @@ body {
   font-family:"Termianl Dosis", monospace;
 }
 
-/* #menubar{
+#menubar{
     margin: 0;
     font-size: 25px;
     font-weight: bold;
@@ -41,7 +41,7 @@ li a.active {
 li a:hover:not(.active) {
     background-color: transparent;
     color: #A8D0E6;
-} */
+}
 
 
 h1 {
