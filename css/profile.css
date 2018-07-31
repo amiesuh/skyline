@@ -18,3 +18,8 @@ button{
   width:90px;
   height:40px;
 }
+hr{
+  display:block;
+  border-width:5px;
+  border-color:black;
+}
