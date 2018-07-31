@@ -1,0 +1,38 @@
+#menubar{
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    background-color:transparent;
+    font-color:black;
+    position:left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 30px 20px;
+    text-decoration: none;
+    text-align:center;
+}
+
+li a.active {
+    background-color: transparent;
+    color: #374785;
+}
+
+li a:hover:not(.active) {
+    background-color: transparent;
+    color: #A8D0E6;
+}
+
