@@ -28,7 +28,7 @@ hr{
 
 table, th, tb{
   border: 3px solid Black;
-}
+  }
 th, tb{
   padding: 35px;
 }
