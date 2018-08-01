@@ -26,11 +26,13 @@ hr{
 
 
 
-table, th, tb{
+#profiles, th, tb{
   border: 3px solid Black;
+  overflow: hidden;
+  padding:20px;
   }
-th, tb{
-  padding: 35px;
+th,tb{
+  padding: 25px;
 }
 
 #search{
