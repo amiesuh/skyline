@@ -6,7 +6,30 @@
 
 <body>
 
-<a href="news.html"><h1>Skyline</h1></a>
+  <table>
+    <tr>
+      <td id="title">
+        <a href="news.html"><h1>Skyline</h1></a>
+      </td>
+      <td id="search">
+              <script>
+                (function() {
+                  var cx = '009005216965798303753:co8awujq5gc';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                  $('search').attr('placeholder','Search for latest news');
+                })();
+                // var search = document.getElementById('gsc-input');
+               </script>
+
+               <gcse:search></gcse:search>
+      </td>
+    </tr>
+  </table>
 
 <div class="menubar">
 <ul id="menu">
@@ -119,4 +142,3 @@ frameborder="0" allowfullscreen></iframe></p>
 
 
 </html>
-
