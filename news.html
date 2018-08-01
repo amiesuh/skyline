@@ -2,6 +2,7 @@
 <html>
 <head><title>SkyLine</title>
   <link rel="stylesheet" type="text/css" href="css/news.css">
+  <meta name="google-signin-client_id" content="54395866753-j5b435ehtghbm9h2kvi7j0nfpe0b9973.apps.googleusercontent.com">
 </head>
 
 <body>
@@ -27,6 +28,9 @@
 
                <gcse:search></gcse:search>
       </td>
+      <td>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      </td>
     </tr>
   </table>
 
@@ -38,19 +42,32 @@
       <li><a href="plan.html">Student<br>Planner</a></li>
       <li><a href="extracurr.html">Extra<br>curricular</a></li>
       <li><a href="welln.html">Wellness</a></li>
+      <li><a href="news.html" onclick="signOut();">Sign out</a></li>
     </ul>
   </div>
 
   <h2 id= "news"> Newsfeed</h2>
-  <a class="twitter-timeline" href="https://twitter.com/skylineedu1?lang=en">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  <h2 id= "bul">Bulletin Board: </h2>
-  <table id="bull">
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
+  <table>
+  <tr>
+    <td>
+      <a class="twitter-timeline" href="https://twitter.com/skylineedu1?lang=en">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </td>
+    <td valign="top">
+      <table>
+        <tr>
+          <td>
+            <p id="bulletin">Bulletin</p></br>
+            <p id="chat">Chatrooms</p>
+            <p id="art">Articles</p>
+          </td>
+        </tr>
+      </table>
+    </td>
   </table>
 
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="js/news.js"></script>
 </body>
 
 
