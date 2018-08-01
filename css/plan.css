@@ -35,3 +35,11 @@ li a:hover:not(.active) {
     background-color: transparent;
     color: #A8D0E6;
 }
+#search{
+  background: none;
+  text-indent: 0px;
+  width: 500px;
+}
+#title{
+  padding-right: 500px;
+}
