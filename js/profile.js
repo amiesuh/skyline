@@ -14,3 +14,10 @@ function init() {
     reader.readAsDataURL(this.files[0]);
   }
 }
+
+
+function name()
+{
+var input = document.getElementById("userInput");
+alert(input);
+}
