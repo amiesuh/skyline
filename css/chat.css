@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Syncopate");
+@import url("https://fonts.googleapis.com/css?family=Terminal+Dosis");
+
+body {
+  font-family:"Terminal Dosis", monospace;
+}
+h1 {
+  font-family:"Syncopate", monospace;
+  margin-left: 30px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 #menubar{
     margin: 0;
     font-size: 25px;

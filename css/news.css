@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Terminal+Dosis");
 
 body {
-  font-family:"Termianl Dosis", monospace;
+  font-family:"Terminal Dosis", monospace;
 }
 
 #menubar{
@@ -10,7 +10,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     background-color:transparent;
-    font-color:black;
+    color:black;
     position:left;
     width: 150px;
     font-family:"Dosis", monospace;
@@ -77,4 +77,8 @@ table#News {
 }
 #title{
   padding-right: 500px;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
