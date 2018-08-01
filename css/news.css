@@ -56,7 +56,7 @@ h1 {
   margin-left: 510px;
   margin-right: 300px;
   font-family:"Dosis", monospace;
-  margin-top:0px;
+  margin-top:10px;
   text-align:center;
   width:100px;
   opacity:.75;
@@ -98,9 +98,20 @@ h1 {
   margin-top: 0px;
 }
 #search{
-  padding-left:16px
+  background: #A8D0E6;
+  text-indent: 0px;
+  width: 500px;
 }
-a{
-  text-decoration: none;
-  color: black;
+#title{
+  padding-right: 500px;
+  background: #A8D0E6;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.header{
+  border:none;
+  background-color:#A8D0E6;
+  width: 1425px;
 }
