@@ -26,12 +26,12 @@ hr{
 
 
 
-#profiles, th, tb{
+#profiles{
   border: 3px solid Black;
   overflow: hidden;
   padding:20px;
   }
-th,tb{
+#profiles{
   padding: 25px;
 }
 
