@@ -71,9 +71,10 @@ table#News {
   width: 30%;
 }
 #search{
-  padding-left: 16px;
-}
-#search{
   background: none;
   text-indent: 0px;
+  width: 500px;
+}
+#title{
+  padding-right: 500px;
 }
