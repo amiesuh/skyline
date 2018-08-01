@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+
 body{
   border-style:solid;
   border-width:8px;
   font-size:30px;
   color:black;
+  font-family: "Dosis", monospace;
 }
 h1{
   font-size:40px;
@@ -35,6 +38,7 @@ hr{
   padding: 25px;
 }
 
+
 #search{
   background: none;
   text-indent: 0px;
@@ -46,11 +50,10 @@ hr{
 #profile{
   width: 100%;
 }
-#profilerowcol{
+#profiles{
   border: 3px solid Black;
-  padding: 35px;
+  padding: 15px;
 }
-
 
 
 
