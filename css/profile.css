@@ -23,6 +23,7 @@ hr{
   border-width:5px;
   border-color:black;
 }
+<<<<<<< HEAD
 
 
 table, th, tb{
@@ -30,4 +31,13 @@ table, th, tb{
 }
 th, tb{
   padding: 35px;
+=======
+#search{
+  background: none;
+  text-indent: 0px;
+  width: 500px;
+}
+#title{
+  padding-right: 500px;
+>>>>>>> 4a60134375870f887f083b0d003dce9b8cf0cefa
 }
