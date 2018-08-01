@@ -53,8 +53,8 @@
   </tr>
     <tr id="profiles">
     <td id="profiles">School:
-      <form id="form" onsubmit="return false;">
-<input  type="text" id="userInput">
+      <form onSubmit="WriteToFile(this)"id="form" onsubmit="return false;">
+<input type="text" id="userInput">
 </form>
     </td>
     <td id="profiles" rowspan="4">Interests:
@@ -94,6 +94,11 @@
   </td>
 </tr>
 </table>
+
+<!-- <input type="button" id="testLink" value="Save Profile"/> -->
+<button type="button" id="buttoninsert" onclick="insert()">Insert</button>
+
+
 
 </body>
 </p>
