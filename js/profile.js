@@ -20,3 +20,7 @@ function name()
 var input = document.getElementById("userInput");
 alert(input);
 }
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}
