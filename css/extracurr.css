@@ -79,7 +79,7 @@ h2{
 .header{
   border:none;
   background-color:#A8D0E6;
-  width: 1425px;
+  width: 100%;
 }
 a {
     text-decoration:none;
@@ -102,5 +102,5 @@ a:hover{
   width: 350px;
 }
 .cal{
-  margin-left: 400px;
+  margin-left:400px;
 }
