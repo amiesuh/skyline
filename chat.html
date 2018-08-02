@@ -8,7 +8,7 @@
 
   <body>
 
-    <table class="header">
+    <table>
       <tr>
         <td id="title">
           <a href="news.html"><h1>Skyline</h1></a>
@@ -23,12 +23,8 @@
                     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
                     var s = document.getElementsByTagName('script')[0];
                     s.parentNode.insertBefore(gcse, s);
+                    $('search').attr('placeholder','Search for latest news');
                   })();
-                  window.onload = function(){
-                    var bar = document.getElementById('gsc-i-id1');
-                    bar.placeholder = 'Search for school-related help...';
-                    bar.style = "width: 100%; padding: 0px; border: none; margin: -0.0625em 0px 0px; height: 1.25em; outline: none; background: none;";
-                  };
                   // var search = document.getElementById('gsc-input');
                  </script>
 
@@ -46,19 +42,139 @@
         <li><a href="welln.html">Wellness</a></li>
       </ul>
 
+      <h3>Math Chats</h3>
+
+
+
+      <!-- Slideshow container for Math -->
+          <section id="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinealgebra.chatango.com" width="777px" height="417px"></iframe>
+              <div class="centered black">Algebra</div>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinegeometry.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Geometry</div>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylineprecalculus.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Pre Calculus</div>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylineapcalculus.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">AP Calculus AB/BC</div>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinecalculus.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Calculus</div>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinestatistics.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Statistics</div>
+            </div>
+
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinetrigonometry.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Trigonometry</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </section>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
+          <!-- math ends-->
+
+      <!-- <table align="center">
+        <th>
+            <iframe src="http://skylinealgebra.chatango.com" width="335px" height="417px"></iframe>
+            <iframe src="http://skylinegeometry.chatango.com/" width="335px" height="417px"></iframe>
+            <iframe src="http://skylineprecalculus.chatango.com/" width="335px" height="417px"></iframe>
+        </th>
+      </table> -->
+
+
+
+
+
+
+      <h3>English Chats</h3>
+
+      <section id="slideshow-container2">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineliterature.chatango.com" width="777px" height="417px"></iframe>
+          <div class="centered black">Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineamericanlit.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">American Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineworldlit.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">World Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineenglish.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">English</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineapliterature.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">AP Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineaplanguage.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">AP Language</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+
+      <br>
+
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+
+
+
+      <script src=js/chat.js type="text/javascript"></script>
+
+
+
   </body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
