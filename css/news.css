@@ -3,7 +3,8 @@
 
 body {
   font-family:"Dosis", monospace;
-  color:#24305E;
+  background-color: white;
+  color:black;
 }
 
 #menubar{
@@ -39,7 +40,7 @@ li a {
 
 li a.active {
     background-color: transparent;
-    color:#F76C6C;
+    color:red;
 }
 
 li a:hover:not(.active) {
@@ -121,25 +122,25 @@ a {
 
 
 .dropbtn{
-  background-color:#F8E9A1;
+  background-color:#A8D0E6;
   color:black;
   padding:16px;
   font-size:20px;
   cursor:pointer;
 }
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #D2B48C;
+    background-color: #374785;
 }
 
-.dtn {
+.dropbtn {
     position: relative;
     display: inline-block;
 }
 
-.articles {
+.articles{
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #A8D0E6;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -153,6 +154,46 @@ a {
     display: block;
 }
 
-.dtn a:hover {background-color: #ddd;}
+.articles a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+
+
+
+.chatrooms{
+  background-color:#A8D0E6;
+  color:black;
+  padding:16px;
+  font-size:20px;
+  cursor:pointer;
+}
+.chatrooms:hover, .chatrooms:focus {
+    background-color: #374785;
+}
+
+.chats {
+    position: relative;
+    display: inline-block;
+}
+
+.chats {
+    display: none;
+    position: absolute;
+    background-color: #A8D0E6;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.chats a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.chats a:hover {background-color: #ddd;}
+
+.shows{display: block;}
