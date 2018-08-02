@@ -104,7 +104,11 @@ a:hover {
   width:350px;
 }
 
-
+.header{
+  border:none;
+  background-color:#A8D0E6;
+  width: 100%;
+}
 
 
 .left{

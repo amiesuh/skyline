@@ -70,3 +70,8 @@ iframe.calendar{
   scrolling: "no";
   padding-left: 350px;
 }
+.header{
+  border:none;
+  background-color:#A8D0E6;
+  width: 100%;
+}
