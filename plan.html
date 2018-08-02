@@ -21,8 +21,12 @@
                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
                   var s = document.getElementsByTagName('script')[0];
                   s.parentNode.insertBefore(gcse, s);
-                  $('search').attr('placeholder','Search for latest news');
                 })();
+                window.onload = function(){
+                  var bar = document.getElementById('gsc-i-id1');
+                  bar.placeholder = 'Search for school-related help...';
+                  bar.style = "width: 100%; padding: 0px; border: none; margin: -0.0625em 0px 0px; height: 1.25em; outline: none; background: none;";
+                };
                 // var search = document.getElementById('gsc-input');
                </script>
 
