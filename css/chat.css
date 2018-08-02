@@ -51,7 +51,7 @@ li a {
 
 li a.active {
     background-color: transparent;
-    color: #374785;
+    color: red;
 }
 
 li a:hover:not(.active) {
