@@ -2,16 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Terminal+Dosis");
 
 body {
-  font-family:"Terminal Dosis", monospace;
-}
-h1 {
-  font-family:"Syncopate", monospace;
-  margin-left: 30px;
-}
+  /* font-family:"Terminal Dosis", monospace; */
+  font-family:"Dosis", monospace;
 
-#map {
-  height: 400px;
-  width: 100%;
 }
 
 #menubar{
@@ -19,8 +12,14 @@ h1 {
     font-size: 25px;
     font-weight: bold;
     background-color:transparent;
-    font-color:black;
+    color:black;
     position:left;
+    font-family:"Dosis", monospace;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
 
 ul {
@@ -58,4 +57,9 @@ li a:hover:not(.active) {
 }
 #title{
   padding-right: 500px;
+}
+
+h1 {
+  font-family:"Syncopate", monospace;
+  margin-left: 30px;
 }

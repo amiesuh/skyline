@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Terminal+Dosis");
 
 body {
-  font-family:"Terminal Dosis", monospace;
+  /* font-family:"Terminal Dosis", monospace; */
+  font-family:"Syncopate", monospace;
+
 }
 h1 {
   font-family:"Syncopate", monospace;
@@ -21,6 +23,7 @@ h1 {
     background-color:transparent;
     font-color:black;
     position:left;
+    font-family:"Dosis", monospace;
 }
 
 ul {

@@ -24,6 +24,8 @@ body {
     position: fixed;
     height: 100%;
     overflow: auto;
+    font-family:"Dosis", monospace;
+
 }
 
 li a {
