@@ -97,12 +97,22 @@ a:hover {
   padding-right: 500px;
 }
 
-
-
-
-
-
 .theshow {display:none;
   height:250px;
   width:350px;
+}
+
+
+
+
+.left{
+  float:left;
+  margin-right:10px;
+  width:250px;
+}
+
+.right{
+  float:right;
+  margin-right:10px;
+  width:250px;
 }
