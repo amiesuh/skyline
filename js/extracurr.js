@@ -49,13 +49,13 @@ function initMap() {
     map: map
   });
 
-  var directory = ["<b>SacredHeart:</b> 1381 S 1st St San Jose, CA 95110",
-                  "<b>EvergreenLibrary:</b> 2635 Aborn Rd, San Jose, CA 95121",
-                  "<b>LoavesandFishes</b> 2150 Alum Rock Avenue, San Jose, CA 95116",
-                  "<b>BerryessaLibrary:</b> 3355 Noble Ave, San Jose, CA 95132",
-                  "<b>EmmaPrusch:</b> 647 King Rd, San Jose, CA 95116",
-                  "<b>HumaneSociety:</b> 901 Ames Ave, Milpitas, CA 95035",
-                  "<b>HappyHollow:</b> 748 Story Rd, San Jose, CA 95112"];
+  var directory = ["<b>Sacred Heart:</b> 1381 S 1st St San Jose, CA 95110",
+                  "<b>Evergreen Library:</b> 2635 Aborn Rd, San Jose, CA 95121",
+                  "<b>Loaves and Fishes</b> 2150 Alum Rock Avenue, San Jose, CA 95116",
+                  "<b>Berryessa Library:</b> 3355 Noble Ave, San Jose, CA 95132",
+                  "<b>Emma Prusch:</b> 647 King Rd, San Jose, CA 95116",
+                  "<b>Humane Society:</b> 901 Ames Ave, Milpitas, CA 95035",
+                  "<b>Happy Hollow:</b> 748 Story Rd, San Jose, CA 95112"];
   var names = ["SacredHeart","EvergreenLibrary","LoavesandFishes", "BerryessaLibrary", "EmmaPrusch", "HumaneSociety", "HappyHollow", "Washington DC"];
   var markers = [SacredHeart, EvergreenLibrary, LoavesandFishes, BerryessaLibrary, EmmaPrusch, HumaneSociety, HappyHollow];
   for(var x = 0; x < names.length; x++){
@@ -71,4 +71,3 @@ function attachInfo(marker, info) {
     infowindow.open(marker.get('map'), marker);
   });
 }
-
