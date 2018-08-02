@@ -36,7 +36,7 @@ li a {
 
 li a.active {
     background-color: transparent;
-    color:#F76C6C;
+    color: red;
 }
 
 li a:hover:not(.active) {
@@ -104,4 +104,3 @@ a:hover{
 .cal{
   margin-left: 400px;
 }
-
