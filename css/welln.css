@@ -107,12 +107,11 @@ a:hover {
 
 .left{
   float:left;
-  margin-right:10px;
-  width:250px;
+  width:600px;
 }
 
 .right{
   float:right;
-  margin-right:10px;
+  margin-right:120px;
   width:250px;
 }
