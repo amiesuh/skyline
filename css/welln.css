@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Syncopate");
-@import url("https://fonts.googleapis.com/css?family=Terminal+Dosis");
+@import url("https://fonts.googleapis.com/css?family=Dosis");
 
 body {
-  font-family:"Termianl Dosis", monospace;
+  font-family:"Dosis", monospace;
 }
 
 #menubar{
@@ -10,7 +10,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     background-color:transparent;
-    font-color:black;
+    color:#24305E;
     position:left;
     width: 200px;
 }
@@ -25,12 +25,14 @@ body {
     height: 100%;
     overflow: auto;
     font-family:"Dosis", monospace;
+    color:#24305E;
+    font-size: 25px;
 
 }
 
 li a {
     display: block;
-    color: black;
+    color:#24305E;
     padding: 30px 20px;
     text-decoration: none;
     text-align:center;
@@ -38,7 +40,7 @@ li a {
 
 li a.active {
     background-color: transparent;
-    color: red;
+    color:#F76C6C;
 }
 
 li a:hover:not(.active) {
@@ -49,6 +51,7 @@ li a:hover:not(.active) {
 h1 {
   font-family:"Syncopate", monospace;
   margin-left: 30px;
+  color:#374785
 }
 
 #rem {
@@ -98,6 +101,55 @@ a:hover {
 #title{
   padding-right: 500px;
 }
+
+#circles {
+  margin-left: 400px;
+  margin-right: 300px;
+  font-family:"Dosis", monospace;
+  margin-top:10px;
+  text-align:center;
+  width:400px;
+  opacity:.75;
+  background-color:#F8E9A1;
+  opacity:.75;
+  font-size:24px;
+  z-index:999;
+  border-radius:10px;
+  color:#24305E;
+
+}
+#circle {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family:"Dosis", monospace;
+  margin-top:20px;
+  text-align:center;
+  width:400px;
+  opacity:.75;
+  background-color:#F8E9A1;
+  opacity:.75;
+  font-size:24px;
+  z-index:800;
+  border-radius:10px;
+  color:#24305E;
+
+}
+#square {
+  margin-left: 740px;
+  font-family:"Dosis", monospace;
+  margin-top:20px;
+  text-align:center;
+  width:400px;
+  opacity:.75;
+  background-color:#F8E9A1;
+  opacity:.75;
+  font-size:24px;
+  z-index:800;
+  border-radius:10px;
+  color:#24305E;
+
+}
+
 
 .theshow {display:none;
   height:250px;
