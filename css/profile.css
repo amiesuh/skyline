@@ -1,36 +1,43 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
-
+@import url("https://fonts.googleapis.com/css?family=Syncopate");
 body{
   border-style:solid;
-  border-width:8px;
+  border-width:3px;
   font-size:30px;
-  color:black;
+  color:#24305E;
   font-family: "Dosis", monospace;
 }
 h1{
   font-size:40px;
-  color:Black;
+  color:#374785;
+  font-family:"Syncopate", monospace;
+
 }
+a {
+    text-decoration: none;
+    color: black;
+  }
 
 h2{
   font-size:35px;
-  color:black;
+  color:#24305E;
 }
 button{
-  color:green;
+  color:#24305E;
   width:90px;
   height:40px;
 }
 hr{
   display:block;
   border-width:5px;
-  border-color:black;
+  border-color:#24305E;
 }
 
 
 
 #profiles{
-  border: 3px solid Black;
+  border: 3px;
+  border-color: #24305E;
   overflow: hidden;
   padding:20px;
   }
@@ -51,7 +58,8 @@ hr{
   width: 100%;
 }
 #profiles{
-  border: 3px solid Black;
+  border: 3px solid;
+  border-color: #24305E;
   padding: 15px;
 }
 
