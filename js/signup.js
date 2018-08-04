@@ -61,11 +61,3 @@ function check() {
 
 
 
-
-// //     // check if stored data from register-form is equal to data from login form
-    // if(userName == storedName && userPw == storedPw) {
-    //     alert('You are logged in.');
-    // }else {
-    //   alert('ERROR');
-    // }
-}
