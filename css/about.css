@@ -1,2 +1,130 @@
-hahah{
+@import url("https://fonts.googleapis.com/css?family=Heebo");
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding-left: 20px;
 }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:white;
+  text-decoration: line-through;
+}
+
+.active {
+  background-color:white;
+
+}
+
+body{
+  font-family: "Heebo",serif;
+  color:black;
+}
+h2{
+  font-family: "Heebo",serif;
+  color:black;
+  font-size:36px;
+  margin-left:15px;
+  display: inline-block;
+  padding-left: 50px;
+  letter-spacing:5px;
+}
+h3{
+  display: inline-block;
+  padding-left:0px;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover:not(.active){
+  text-decoration:line-through;
+}
+#space{
+  display: inline-block;
+  padding-right:700px;
+}
+
+#info5 {
+  font-size: 55px;
+  text-align: center;
+  color: red;
+}
+
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  width:100%;
+  position:static;
+}
+h4{
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight:lighter;
+  color:white;
+}
+h3{
+  color:white;
+}
+#show {
+  display:none;
+  width:5000px;
+  height:1000px;
+}
+#info5{
+  font-size:25px;
+  color:black;
+  text-align: center;
+}
+#skyline{
+  font-size:25px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color:black;
+  text-align: center;
+}
+#creators{
+  font-size:25px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color:black;
+  text-align: center;
+}
+#cc{
+  display:block;
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
