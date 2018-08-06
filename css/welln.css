@@ -70,6 +70,7 @@ ul.a {
 
 #per {
   padding-left: 100px;
+  text-align: center;
 }
 a {
   color: darkblue;
@@ -80,6 +81,7 @@ a:hover {
 
 #essays {
   padding-left: 100px;
+  text-align: center;
 }
 
 #motivation {
@@ -102,45 +104,29 @@ a:hover {
 
 #circles {
   font-family: "Heebo",serif;
-  margin-top:30px;
-  margin-left: 80px;
+  margin-top:auto;
+  margin-left:auto;
   text-align:center;
-  width:400px;
-  opacity:.75;
-  opacity:.75;
   font-size:20px;
-  z-index:999;
-  border-radius:10px;
   color:black
 
 }
 #circle {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left:10;
+  margin-right:0;
   font-family: "Heebo",serif;
   margin-top:20px;
   text-align:center;
-  width:400px;
-  opacity:.75;
-  opacity:.75;
   font-size:20px;
-  z-index:800;
-  border-radius:10px;
   color:black;
 
 }
 #circless {
-  margin-left: 30px;
-  margin-right: 0;
-  font-family: "Heebo",serif;
-  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family:"Heebo",serif;
   text-align:center;
-  width:400px;
-  opacity:.75;
-  opacity:.75;
   font-size:20px;
-  z-index:800;
-  border-radius:10px;
   color:black;
 
 }
@@ -190,17 +176,6 @@ a:hover {
   width:50%;
 }
 
-footer{
-  background-color: black;
-  text-align:center;
-  color:white;
-  letter-spacing: 5px;
-  border:none;
-  font-size:10px;
-  bottom:0;
-  left:0;
-  position: fixed;
-  width:100%;
 }
 h3{
   display: inline-block;
@@ -215,4 +190,23 @@ h4{
   display: inline-block;
   padding-right: 825px;
 }
-
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover:not(.active){
+  text-decoration: line-through;
+  color:black;
+}
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position:fixed;
+  width:100%;
+}
