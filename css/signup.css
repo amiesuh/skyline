@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo");
+body {
+    font-family:"Heebo",serif;
+    background-image:url(https://wallpapercave.com/wp/HCKDboy.png);
+    box-sizing: border-box;
+    border-color: black;
+    border-width: thick;
+    border-style: groove;
+    width:400px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+} */
+
+/* Overwrite default styles of hr */
+/* hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+} */
+
+/* Set a style for the submit button */
+#rgstr_btn {
+    background-color:black;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+#rgstr_btn:hover {
+    opacity: 1;
+}
+
+#login_btn {
+    background-color:black;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+#login_btn:hover {
+    opacity: 1;
+}
+#su{
+  background-color: white;
+  padding:30px;
+}
+.su{
+  background-color: white;
+  padding:30px;
+}
+
