@@ -1,68 +1,66 @@
-@import url("https://fonts.googleapis.com/css?family=Syncopate");
-@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Heebo");
 
-body {
-  font-family:"Dosis", monospace;
+
+body{
+  font-family: "Heebo",serif;
+  color:black;
 }
 
-#menubar{
-    margin: 0;
-    font-size: 25px;
-    font-weight: bold;
-    background-color:transparent;
-    color:#24305E;
-    position:left;
-    width: 200px;
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+  /* position: sticky; */
+  top: 0;
+  width: 100%;
+  padding-left: 80px;
 }
 
-#menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color: white;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    font-family:"Dosis", monospace;
-    color:#24305E;
-    font-size: 25px;
-
+li {
+  float: left;
 }
 
 li a {
-    display: block;
-    color:#24305E;
-    padding: 30px 20px;
-    text-decoration: none;
-    text-align:center;
-}
-
-li a.active {
-    background-color: transparent;
-    color:#F76C6C;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: transparent;
-    color: #A8D0E6;
+  background-color:white;
+  text-decoration: line-through;
+  color:black;
+}
+
+.active {
+  background-color:white;
+  color:black;
+
 }
 
 h1 {
-  font-family:"Syncopate", monospace;
-  margin-left: 30px;
-  color:#374785
+  font-family: "Heebo",serif;
+  color:black;
+  font-size:36px;
+  margin-left:15px;
+  display: inline-block;
+  padding-left: 89px;
+  padding-top: 5px;
+  letter-spacing:5px;
 }
 
-#rem {
-  padding-left: 400px;
-  padding-top: 50px;
-}
 
 ul.a {
-    list-style-type: circle;
     width: 300px;
-    padding-left: 350px;
+    padding-left: 100px;
+    padding-top: 50px;
 }
 
 #quotes {
@@ -71,7 +69,7 @@ ul.a {
 }
 
 #per {
-  padding-left: 300px;
+  padding-left: 100px;
 }
 a {
   color: darkblue;
@@ -81,11 +79,11 @@ a:hover {
 }
 
 #essays {
-  padding-left: 300px;
+  padding-left: 100px;
 }
 
 #motivation {
-  padding-left: 800px;
+  padding-left: 100px;
 }
 
 #videos {
@@ -103,73 +101,118 @@ a:hover {
 }
 
 #circles {
-  margin-left: 500px;
-  margin-right: 250px;
-  font-family:"Dosis", monospace;
-  margin-top:10px;
+  font-family: "Heebo",serif;
+  margin-top:30px;
+  margin-left: 80px;
   text-align:center;
   width:400px;
   opacity:.75;
-  background-color:#F8E9A1;
   opacity:.75;
-  font-size:24px;
+  font-size:20px;
   z-index:999;
   border-radius:10px;
-  color:#24305E;
+  color:black
 
 }
 #circle {
-  margin-left: 300px;
-  margin-right: 300px;
-  font-family:"Dosis", monospace;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Heebo",serif;
   margin-top:20px;
   text-align:center;
   width:400px;
   opacity:.75;
-  background-color:#F8E9A1;
   opacity:.75;
-  font-size:24px;
+  font-size:20px;
   z-index:800;
   border-radius:10px;
-  color:#24305E;
+  color:black;
+
+}
+#circless {
+  margin-left: 30px;
+  margin-right: 0;
+  font-family: "Heebo",serif;
+  margin-top:20px;
+  text-align:center;
+  width:400px;
+  opacity:.75;
+  opacity:.75;
+  font-size:20px;
+  z-index:800;
+  border-radius:10px;
+  color:black;
 
 }
 #square {
   margin-left: 750px;
-  font-family:"Dosis", monospace;
+  font-family: "Heebo",serif;
   margin-top:20px;
   text-align:center;
   width:400px;
   opacity:.75;
-  background-color:#F8E9A1;
   opacity:.75;
-  font-size:24px;
+  font-size:20px;
   z-index:800;
   border-radius:10px;
-  color:#24305E;
+  color:black;
 
 }
+#circlesss {
+  margin-left: 500px;
+  margin-right: 0;
+  font-family: "Heebo",serif;
+  margin-top:20px;
+  text-align:center;
+  width:400px;
+  opacity:.75;
+  opacity:.75;
+  font-size:20px;
+  z-index:800;
+  border-radius:10px;
+  color:black;
 
+}
 
 .theshow {display:none;
   height:250px;
   width:350px;
 }
 
-.header{
-  border:none;
-  background-color:#A8D0E6;
-  width: 100%;
-}
-
 
 .left{
   float:left;
-  width:600px;
+  width:50%;
 }
 
 .right{
   float:right;
-  margin-right:280px;
-  width:340px;
+  width:50%;
 }
+
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  width:100%;
+}
+h3{
+  display: inline-block;
+  padding-left:20px;
+}
+h4{
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight:lighter;
+}
+#space{
+  display: inline-block;
+  padding-right: 825px;
+}
+
