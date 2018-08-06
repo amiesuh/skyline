@@ -1,13 +1,56 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<title>SkyLine</title>
-  <link rel="stylesheet" type="text/css" href="css/home.css">
-
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <header>
+    <h2>S K Y L I N E</h2>
+    <div id="space"></div>
+    <h3 align="right"><a href="signup.html">SIGN UP/LOGIN<a><h3>
+  </header>
+    <div>
+      <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="home.html"> Home </a></li>
+        <li><a href="news.html"> Newsfeed </a></li>
+        <li><a href="chat.html"> Chat </a></li>
+        <li><a href="extracurr.html"> Volunteer </a></li>
+        <li><a href="about.html"> About Us </a></li>
+      </ul>
+    </div>
+    <center>  <div class="slideshow" id="slideshows">
+      <img class="show" width="900px" src="images/image1.png">
+      <img class="show"width="900px" src="images/image2.png">
+      <img class="show" width="900px"src="images/image3.png">
+      <img class="show"width="900px" src="images/image4.png">
+      <img class="show" width="900px"src="images/image5.png">
+    </div></center>
+    <script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("show");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+  </script>
+
+
+
+
+      <footer>
+        <h3>SKYLINE 2018 all rights reserved</h3>
+        <h4>Website built by Amie, Dana, Mansi, & Rosie</h4>
+      </footer>
+
 
 </body>
-
-</head>
 </html>
