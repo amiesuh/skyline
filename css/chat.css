@@ -1,89 +1,107 @@
-@import url("https://fonts.googleapis.com/css?family=Syncopate");
-@import url("https://fonts.googleapis.com/css?family=Dosis");
-
-body {
-  font-family:"Dosis", monospace;
-  color:#24305E;
-}
-h1 {
-  font-family:"Syncopate", monospace;
-  margin-left: 30px;
-}
-
-.header{
-  border:none;
-  background-color:#A8D0E6;
-  width: 100%;
-}
-
-#map {
-  height: 400px;
-  width: 100%;
-}
-
-#menubar{
-    margin: 0;
-    font-size: 25px;
-    font-weight: bold;
-    background-color:transparent;
-    font-color:black;
-    position:left;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Heebo");
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 150px;
-    background-color: white;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding-left: 20px;
+}
+
+li {
+  float: left;
 }
 
 li a {
-    display: block;
-    color: black;
-    padding: 30px 20px;
-    text-decoration: none;
-    text-align:center;
-}
-
-li a.active {
-    background-color: transparent;
-    color: red;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: transparent;
-    color: #A8D0E6;
-}
-#search{
-  background: none;
-  text-indent: 0px;
-  width: 500px;
-}
-#title{
-  padding-right: 500px;
+  background-color:white;
+  text-decoration: line-through;
 }
 
+.active {
+  background-color:white;
 
+}
+body{
+  font-family: "Heebo",serif;
+  color:black;
+}
+h2{
+  font-family: "Heebo",serif;
+  color:black;
+  font-size:36px;
+  margin-left:15px;
+  display: inline-block;
+  padding-left: 50px;
+  letter-spacing:5px;
+}
+h3{
+  display: inline-block;
+  padding-left:0px;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover:not(.active){
+  text-decoration:line-through;
+}
+#space{
+  display: inline-block;
+  padding-right:700px;
+}
 
-
-
-
-
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  width:100%;
+}
+h3{
+  color: white;
+}
+h4{
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight:lighter;
+}
+#show {
+  display:none;
+  width:5000px;
+  height:1000px;
+}
 
 /* Slideshow CSS*/
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
-  margin-left: 322px;
-  /* margin-right: 700px; */
-
+  margin: auto;
 }
 
 /* Hide the images by default */
@@ -108,19 +126,18 @@ li a:hover:not(.active) {
 
 /* Position the "next button" to the right */
 .next {
-  margin-right:0px;
-  margin-left:734px;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #F76C6C;
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #374785;
+  color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -162,7 +179,6 @@ li a:hover:not(.active) {
   animation-duration: 1.5s;
 }
 
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -171,146 +187,4 @@ li a:hover:not(.active) {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-h3{
-  vertical-align:top;
-  font-family:"Dosis", monospace;
-  text-align:center;
-  background-color:#F8E9A1;
-  color:#24305E;
-  border-radius:10px;
-  z-index:999;
-  opacity:.75;
-  height: 50%;
-  font-size: 24px;
-  margin-left:610px;
-  width:200px;
-  margin-top: 50px;
-}
-
-
-
-
-
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-#slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin-left: 322px;
-  /* margin-right: 700px; */
-
-}
-
-/* Slideshow container */
-#slideshow-container2 {
-  max-width: 1000px;
-  position: relative;
-  margin-left: 322px;
-  /* margin-right: 700px; */
-
-}
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  margin-right:0px;
-  margin-left:734px;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #F76C6C;
-}
-
-/* Caption text */
-.text {
-  color: #374785;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-h3{
-  vertical-align:top;
-  font-family:"Dosis", monospace;
-  text-align:center;
-  background-color:#F8E9A1;
-  color:#24305E;
-  border-radius:10px;
-  z-index:999;
-  opacity:.75;
-  height: 50%;
-  font-size: 24px;
-  margin-left:610px;
-  width:200px;
-  margin-top: 50px;
 }

@@ -1,52 +1,48 @@
-@import url("https://fonts.googleapis.com/css?family=Syncopate");
-@import url("https://fonts.googleapis.com/css?family=Dosis");
-body {
-  font-family:"Dosis", monospace;
-  color:#24305E;
-}
-
-#menubar{
-    margin: 0;
-    margin-top: 100px;
-    font-size: 25px;
-    font-weight: bold;
-    background-color:transparent;
-    position:left;
-    width: 200px;
-    font-family:"Dosis", monospace;
-
-}
-
+@import url("https://fonts.googleapis.com/css?family=Heebo");
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color: white;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding-left: 50px;
+}
+
+li {
+  float: left;
 }
 
 li a {
-    display: block;
-    color:#24305E ;
-    padding: 30px 20px;
-    text-decoration: none;
-    text-align:center;
-}
-
-li a.active {
-    background-color: transparent;
-    color: red;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: transparent;
-    color:#A8D0E6;
+  background-color:white;
+  text-decoration: line-through;
 }
 
-h1 {
+.active {
+  background-color:white;
+
+}
+
+body{
+  font-family: "Heebo",serif;
+  color:black;
+}
+
+
+/* h1 {
   font-family:"Syncopate", monospace;
   margin-left: 30px;
   color:#374785;
@@ -56,7 +52,7 @@ h1 {
 h1 {
   font-family:"Syncopate", monospace;
   margin-left: 30px;
-}
+} */
 
 
 #map {
@@ -65,7 +61,7 @@ h1 {
   text-align: right;
   margin-left: 400px;
 }
-h2{
+vol{
   margin-left: 600px;
   vertical-align:top;
   text-align:center;
@@ -78,7 +74,16 @@ h2{
   font-size: 24px;
   width: 350px;
 }
-.header{
+h2{
+  font-family: "Heebo",serif;
+  color:black;
+  font-size:36px;
+  margin-left:15px;
+  display: inline-block;
+  padding-left: 50px;
+  letter-spacing:5px;
+}
+/* .header{
   border:none;
   background-color:#A8D0E6;
   width: 100%;
@@ -89,7 +94,7 @@ a {
 }
 a:hover{
   text-decoration: underline;
-}
+} */
 #art{
   text-align: center;
   margin-left: 600px;
@@ -105,4 +110,34 @@ a:hover{
 }
 .cal{
   margin-left:400px;
+}
+h3{
+  display: inline-block;
+  padding-left:20px;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:white;
+
+}
+#space{
+  display: inline-block;
+  padding-right: 825px;
+}
+
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  width:100%;
+}
+h4{
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight:lighter;
 }
