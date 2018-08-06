@@ -1,23 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo");
-
-
-body{
-  font-family: "Heebo",serif;
-  color:black;
-}
-
-
-
-h2{
-  font-family: "Heebo",serif;
-  color:black;
-  font-size:36px;
-  margin-left:15px;
-  display: inline-block;
-  padding-left: 50px;
-  letter-spacing:5px;
-}
-
 ul {
   list-style-type: none;
   margin:0;
@@ -30,7 +11,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
-  padding-left: 0px;
+  padding-left: 20px;
 }
 
 li {
@@ -41,7 +22,7 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 30px;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -55,6 +36,66 @@ li a:hover:not(.active) {
 
 }
 
+body{
+  font-family: "Heebo",serif;
+  color:black;
+}
+h2{
+  font-family: "Heebo",serif;
+  color:black;
+  font-size:36px;
+  margin-left:15px;
+  display: inline-block;
+  padding-left: 50px;
+  letter-spacing:5px;
+}
+h3{
+  display: inline-block;
+  padding-left:0px;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover:not(.active){
+  text-decoration:line-through;
+}
+#space{
+  display: inline-block;
+  padding-right:700px;
+}
+
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  width:100%;
+}
+h3{
+  color: white;
+}
+h4{
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight:lighter;
+}
+h3{
+  color:white;
+}
+#show {
+  display:none;
+  width:5000px;
+  height:1000px;
+}
 
 
 #news {

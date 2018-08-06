@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo");
-
-
-body{
-  font-family: "Heebo",serif;
-  color:black;
-}
-
 ul {
   list-style-type: none;
   margin:0;
@@ -15,10 +8,10 @@ ul {
   font-family:"Heebo", serif;
   font-weight:bold;
   color:black;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   width: 100%;
-  padding-left: 80px;
+  padding-left: 20px;
 }
 
 li {
@@ -36,31 +29,64 @@ li a {
 li a:hover:not(.active) {
   background-color:white;
   text-decoration: line-through;
-  color:black;
 }
 
 .active {
   background-color:white;
-  color:black;
 
 }
 
-h1 {
+body{
+  font-family: "Heebo",serif;
+  color:black;
+}
+h2{
   font-family: "Heebo",serif;
   color:black;
   font-size:36px;
   margin-left:15px;
   display: inline-block;
-  padding-left: 89px;
-  padding-top: 5px;
+  padding-left: 50px;
   letter-spacing:5px;
 }
+h3{
+  display: inline-block;
+  padding-left:0px;
+  font-family:"Heebo", serif;
+  font-weight:bold;
+  color:black;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover:not(.active){
+  text-decoration:line-through;
+}
+#space{
+  display: inline-block;
+  padding-right:700px;
+}
 
-
-ul.a {
-    width: 300px;
-    padding-left: 100px;
-    padding-top: 50px;
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position: fixed;
+  width:100%;
+}
+h3{
+  color: white;
+}
+h4{
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight:lighter;
 }
 
 #quotes {
