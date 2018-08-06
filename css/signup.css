@@ -1,18 +1,14 @@
-
-
-h2 {
-
-}
+@import url("https://fonts.googleapis.com/css?family=Heebo");
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    font-family:"Heebo",serif;
+    background-image:url(https://wallpapercave.com/wp/HCKDboy.png);
     box-sizing: border-box;
     border-color: black;
     border-width: thick;
     border-style: groove;
     width:400px;
-    margin-left: 450px;
-    padding-top: 35px;
+    margin-left:auto;
+    margin-right: auto;
     text-align: center;
 
 }
@@ -20,11 +16,6 @@ body {
 
 *{
     box-sizing: border-box;
-}
-
-.container {
-    padding: 16px;
-    background-color: white;
 }
 
 /* Full-width input fields */
@@ -50,7 +41,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for the submit button */
 #rgstr_btn {
-    background-color: #4CAF50;
+    background-color:black;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -65,7 +56,7 @@ input[type=text], input[type=password] {
 }
 
 #login_btn {
-    background-color: #4CAF50;
+    background-color:black;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -77,5 +68,13 @@ input[type=text], input[type=password] {
 
 #login_btn:hover {
     opacity: 1;
+}
+#su{
+  background-color: white;
+  padding:30px;
+}
+.su{
+  background-color: white;
+  padding:30px;
 }
 
