@@ -11,7 +11,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 li {
@@ -57,6 +57,14 @@ h3{
   display: inline-block;
   padding-right: 825px;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover:not(.active) {
+  color:black;
+  text-decoration: line-through;
+}
 
 footer{
   background-color: black;
@@ -67,7 +75,7 @@ footer{
   font-size:10px;
   bottom:0;
   left:0;
-  position: fixed;
+  position:static;
   width:100%;
 }
 h4{
@@ -79,4 +87,7 @@ h4{
   display:none;
   width:5000px;
   height:1000px;
+}
+#medspace{
+  height: 500px;
 }
