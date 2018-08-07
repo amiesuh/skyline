@@ -127,6 +127,9 @@ a:hover:not(.active){
   position:relative;
   height:100px;
 }
+#centered{
+  text-align: center;
+}
 footer{
   background-color: black;
   text-align:center;
