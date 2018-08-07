@@ -58,11 +58,10 @@ h1 {
 
 
 #map {
-  height: 500px;
+   height: 500px;
   width: 55%;
   text-align: right;
-
-  margin:25px auto;
+  margin-left: 350px;
 }
 
 #vol{
