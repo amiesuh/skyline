@@ -1,6 +1,5 @@
 
 var register =  [ ];
-localStorage.setItem('register', JSON.stringify(register));
 
 register = JSON.parse(localStorage.getItem('register'));
 var signupAlertText = document.getElementById("signupAlert");
