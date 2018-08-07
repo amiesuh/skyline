@@ -11,7 +11,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 li {
@@ -58,8 +58,8 @@ h1 {
 #map {
   height: 500px;
   width: 55%;
-  text-align: right;
-  margin-left: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 vol{
   margin-left: 600px;
@@ -97,7 +97,8 @@ a:hover{
 } */
 #art{
   text-align: center;
-  margin-left: 600px;
+  margin-left: auto;
+  margin-right: auto;
   vertical-align:top;
   background-color:#F8E9A1;
   color:#24305E;
@@ -109,7 +110,7 @@ a:hover{
   width: 350px;
 }
 .cal{
-  margin-left:400px;
+  margin-left: 320px;
 }
 h3{
   display: inline-block;
@@ -133,7 +134,7 @@ footer{
   font-size:10px;
   bottom:0;
   left:0;
-  position: fixed;
+  position: static;
   width:100%;
 }
 h4{
