@@ -19,6 +19,7 @@ function store() {
     var data = {"nm": nm.value, "pw": pw.value};
     register.push(data);
     localStorage.setItem('register', JSON.stringify(register));
+
     console.log(register)
 
     signupAlertText.innerHTML = "Sign up successful! Please login below.";
@@ -38,6 +39,7 @@ function check() {
 
       if (register[i].nm == userName) {
         if (register[i].pw == userPw) {
+
           loginAlertText.innerHTML = "Login successful! Loading homepage...";
           setTimeout(function myFunction(){
             window.location.href = "home.html";
@@ -48,6 +50,7 @@ function check() {
           // else {
           //   window.location.href = "signup.html";
           // }
+
         }
         else {
           loginAlertText.innerHTML = "Incorrect password! Try again.";
