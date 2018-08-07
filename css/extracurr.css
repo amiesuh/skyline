@@ -61,7 +61,7 @@ h1 {
    height: 500px;
   width: 55%;
   text-align: right;
-  margin-left: 350px;
+  margin: 25px auto;
 }
 
 #vol{
