@@ -51,10 +51,7 @@ h2{
 }
 h3{
   display: inline-block;
-  padding-left:0px;
-  font-family:"Heebo", serif;
-  font-weight:bold;
-  color:black;
+  padding-left:20px;
 }
 a{
   text-decoration: none;
@@ -65,7 +62,7 @@ a:hover:not(.active){
 }
 #space{
   display: inline-block;
-  padding-right:700px;
+  padding-right:825px;
 }
 
 #info5 {
