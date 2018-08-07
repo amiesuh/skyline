@@ -123,7 +123,10 @@ h3{
   display: inline-block;
   padding-right: 825px;
 }
-
+#footer{
+  position:relative;
+  height:100px;
+}
 footer{
   background-color: black;
   text-align:center;
@@ -133,9 +136,9 @@ footer{
   font-size:10px;
   bottom:0;
   left:0;
-  position: static;
+  position: absolute;
   width:100%;
-
+  vertical-align: sub;
 }
 h4{
   font-size: 14px;
