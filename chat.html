@@ -1,206 +1,190 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo");
-ul {
-  list-style-type: none;
-  margin:0;
-  padding: 0;
-  overflow: hidden;
-  background-color:white;
-  font-family:"Heebo", serif;
-  font-weight:bold;
-  color:black;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding-left: 20px;
-}
+<!DOCTYPE html>
 
-li {
-  float: left;
-}
+<html>
+  <head>
+    <title>SkyLine</title>
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+  </head>
 
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+  <body>
 
-li a:hover:not(.active) {
-  background-color:white;
-  text-decoration: line-through;
-}
+    <!-- <table class="header">
+      <tr>
+        <td id="title">
+          <a href="news.html"><h1>Skyline</h1></a>
+        </td>
+        <td id="search">
+                <script>
+                  (function() {
+                    var cx = '009005216965798303753:co8awujq5gc';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                    $('search').attr('placeholder','Search for latest news');
+                  })();
+                  // var search = document.getElementById('gsc-input');
+                 </script>
 
-.active {
-  background-color:white;
+                 <gcse:search></gcse:search>
+        </td>
+      </tr>
+    </table> -->
 
-}
+    <header>
+      <h2>S K Y L I N E</h2>
+      <div id="space"></div>
+      <h3 align="right"><a href="signup.html">SIGN UP/LOGIN<a><h3>
+    </header>
+      <div>
+        <ul>
+          <li><a href="index.html"></a></li>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="news.html"> Newsfeed </a></li>
+          <li><a href="chat.html"> Chat </a></li>
+          <li><a href="extracurr.html"> Volunteer </a></li>
+          <li><a href="welln.html"> Wellness </a></li>
+          <li><a href="about.html"> About Us </a></li>
+        </ul>
+      </div>
 
-body{
-  font-family: "Heebo",serif;
-  color:black;
-}
-h2{
-  font-family: "Heebo",serif;
-  color:black;
-  font-size:36px;
-  margin-left:15px;
-  display: inline-block;
-  padding-left: 50px;
-  letter-spacing:5px;
-}
-h3{
-  display: inline-block;
-  padding-left:0px;
-  font-family:"Heebo", serif;
-  font-weight:bold;
-  color:black;
-}
-a{
-  text-decoration: none;
-  color:black;
-}
-a:hover:not(.active){
-  text-decoration:line-through;
-}
-#space{
-  display: inline-block;
-  padding-right:700px;
-}
+      <h3 id="math">Math Chats</h3>
 
-footer{
-  background-color: black;
-  text-align:center;
-  color:white;
-  letter-spacing: 5px;
-  border:none;
-  font-size:10px;
-  bottom:0;
-  left:0;
-  position: static;
-  width:100%;
-}
-h3{
-  color: white;
-}
-h4{
-  font-size: 14px;
-  letter-spacing: 5px;
-  font-weight:lighter;
-}
-#show {
-  display:none;
-  width:5000px;
-  height:1000px;
-}
-.head{
-  position: relative;
-  text-align: center;
-  color: white;
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-weight: bold;
-}
-.headtitle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-}
 
-/* Slideshow CSS*/
+      <!-- Slideshow container for Math -->
+          <section id="slideshow-container">
 
-* {box-sizing:border-box}
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinealgebra.chatango.com" width="777px" height="417px"></iframe>
+              <div class="centered black">Algebra</div>
+            </div>
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
-  position: relative;
-  margin: auto;
-}
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinegeometry.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Geometry</div>
+            </div>
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylineprecalculus.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Pre Calculus</div>
+            </div>
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylineapcalculus.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">AP Calculus AB/BC</div>
+            </div>
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinecalculus.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Calculus</div>
+            </div>
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinestatistics.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Statistics</div>
+            </div>
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+            <div class="mySlides fade">
+              <iframe class="math" src="http://skylinetrigonometry.chatango.com/" width="777px" height="417px"></iframe>
+              <div class="centered white">Trigonometry</div>
+            </div>
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </section>
+          <br>
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
+          <!-- math ends-->
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+      <!-- <table align="center">
+        <th>
+            <iframe src="http://skylinealgebra.chatango.com" width="335px" height="417px"></iframe>
+            <iframe src="http://skylinegeometry.chatango.com/" width="335px" height="417px"></iframe>
+            <iframe src="http://skylineprecalculus.chatango.com/" width="335px" height="417px"></iframe>
+        </th>
+      </table> -->
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+
+
+
+      <h3 id="eng">English Chats</h3>
+
+      <section id="slideshow-container2">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineliterature.chatango.com" width="777px" height="417px"></iframe>
+          <div class="centered black">Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineamericanlit.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">American Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineworldlit.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">World Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineenglish.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">English</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineapliterature.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">AP Literature</div>
+        </div>
+
+        <div class="english" class="mySlides fade">
+          <iframe class="english" src="http://skylineaplanguage.chatango.com/" width="777px" height="417px"></iframe>
+          <div class="centered white">AP Language</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+
+      <br>
+
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+
+
+      <footer>
+        <h3>SKYLINE 2018 all rights reserved</h3>
+        <h4>Website built by Amie, Dana, Mansi, & Rosie</h4>
+      </footer>
+
+      <script src=js/chat.js type="text/javascript"></script>
+
+  </body>
+
+</html>
