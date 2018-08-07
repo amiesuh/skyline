@@ -51,8 +51,6 @@ body{
   margin-left: 30px;
   color:#374785;
 }
-
-
 h1 {
   font-family:"Syncopate", monospace;
   margin-left: 30px;
@@ -62,8 +60,8 @@ h1 {
 #map {
   height: 500px;
   width: 55%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: right;
+  margin:25px auto;
 }
 vol{
   margin-left: 600px;
@@ -86,6 +84,7 @@ h2{
   display: inline-block;
   padding-left: 50px;
   letter-spacing:5px;
+  text-align: center;
 }
 /* .header{
   border:none;
@@ -101,32 +100,31 @@ a:hover{
 } */
 #art{
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin:25px auto;
   vertical-align:top;
-  background-color:#F8E9A1;
-  color:#24305E;
-  border-radius:10px;
-  z-index:999;
-  opacity:.75;
-  height: 50%;
+  background-color:white;
+  color:black;
   font-size: 24px;
-  width: 350px;
+  letter-spacing: 5px;
 }
 .cal{
-  margin-left: 320px;
+  margin:25px 320px;
+
 }
 h3{
   display: inline-block;
   padding-left:20px;
-  font-family:"Heebo", serif;
-  font-weight:bold;
-  color:white;
-
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover:not(.active){
+  text-decoration:line-through;
 }
 #space{
   display: inline-block;
-  padding-right: 825px;
+  padding-right: 700px;
 }
 #footer{
   position:relative;
@@ -144,9 +142,4 @@ footer{
   position: absolute;
   width:100%;
   vertical-align: sub;
-}
-h4{
-  font-size: 14px;
-  letter-spacing: 5px;
-  font-weight:lighter;
 }

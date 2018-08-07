@@ -1,3 +1,20 @@
+
+var account = JSON.parse(localStorage.getItem('activeAccount'));
+var register = JSON.parse(localStorage.getItem('register'));
+var welcomeTag = document.getElementById("welcome");
+userPage();
+function userPage(){
+  welcomeTag.innerHTML = "Welcome, " + account.nm + "!";
+}
+
+function signOut(){
+  for (var i in register){
+    register[i].isActive = false;
+  }
+  localStorage.setItem('activeAccount', null);
+}
+
+
 var box1 = document.getElementById("select1");
 var box2 = document.getElementById("select2");
 var form1 = document.getElementById("subjects");
@@ -81,6 +98,31 @@ function searchMath(){
   }
   else if(mathClass.value == "abbc"){
     chatFrame.src = "http://skylineapcalculus.chatango.com";
+  }
+  chatFrame.style.margin = "0 auto";
+}
+
+function searchEnglish(){
+  document.getElementById("processingtext").innerHTML = "Processing your chat request...!";
+  $("#processingtext").fadeIn("slow");
+  setTimeout(function myFunction(){}, 2000);
+  if(englishClass.value == "lit"){
+    chatFrame.src = "http://skylineliterature.chatango.com";
+  }
+  else if(englishClass.value == "amlit"){
+    chatFrame.src = "http://skylineamericanlit.chatango.com";
+  }
+  else if(englishClass.value == "worldlit"){
+    chatFrame.src = "http://skylineworldlit.chatango.com";
+  }
+  else if(englishClass.value == "english"){
+    chatFrame.src = "http://skylineenglish.chatango.com";
+  }
+  else if(englishClass.value == "aplang"){
+    chatFrame.src = "http://skylineaplanguage.chatango.com";
+  }
+  else if(englishClass.value == "aplit"){
+    chatFrame.src = "http://skylineapliterature.chatango.com";
   }
   chatFrame.style.margin = "0 auto";
 }
