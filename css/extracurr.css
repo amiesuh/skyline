@@ -61,20 +61,16 @@ h1 {
   height: 500px;
   width: 55%;
   text-align: right;
-  margin-left: 400px;
+  margin-left: 300px;
 }
-vol{
-  margin-left: 600px;
+
+#vol{
   vertical-align:top;
   text-align:center;
-  background-color:#F8E9A1;
-  color:#24305E;
-  border-radius:10px;
-  z-index:999;
-  opacity:.75;
-  height: 50%;
-  font-size: 24px;
+  font-size: 25px;
   width: 350px;
+  margin-left: 490px;
+  font-weight: normal;
 }
 h2{
   font-family: "Heebo",serif;
@@ -84,7 +80,6 @@ h2{
   display: inline-block;
   padding-left: 50px;
   letter-spacing:5px;
-  text-align: center;
 }
 /* .header{
   border:none;
@@ -139,6 +134,22 @@ footer{
   position: absolute;
   width:100%;
   vertical-align: sub;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.center {
+    font-size:25px;
+    letter-spacing:5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 h4{
   font-size: 14px;
