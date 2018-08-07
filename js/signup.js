@@ -1,5 +1,8 @@
 
-var register =  [ ];
+var register =  [];
+
+//only turn on when you need to reset the register system
+// localStorage.setItem('register', JSON.stringify(register));
 
 register = JSON.parse(localStorage.getItem('register'));
 var signupAlertText = document.getElementById("signupAlert");
@@ -15,7 +18,7 @@ function store() {
     localStorage.setItem('nm', nm.value);
     localStorage.setItem('pw', pw.value);
 
-    var data = {"nm": nm.value, "pw": pw.value};
+    var data = {"nm": nm.value, "pw": pw.value, "isActive": false};
     register.push(data);
     localStorage.setItem('register', JSON.stringify(register));
 
@@ -40,6 +43,9 @@ function check() {
         if (register[i].pw == userPw) {
 
           loginAlertText.innerHTML = "Login successful! Loading homepage...";
+          register[i].isActive = true;
+          var activeAccount = register[i];
+          localStorage.setItem('activeAccount', JSON.stringify(activeAccount));
           setTimeout(function myFunction(){
             window.location.href = "home.html";
           }, 2000);
