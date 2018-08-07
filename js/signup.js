@@ -16,7 +16,7 @@ function store() {
     var data = {"un": nm.value, "pw": pw.value};
     register.push(data);
     localStorage.setItem('register', JSON.stringify(register));
-
+    alert('Sign up successful!')
     //alert(register[register.length - 1].un + " " + register[register.length - 1].pw);
 }
 
@@ -38,14 +38,16 @@ function check() {
           // alert ("Login successful!");
           // window.location.href='home.html';
           tf = true;
+
         if (window.confirm('Login success!'))
       {
-        window.location.href = "home.html"  //NOT WORKING! HOW DO I MAKE ANOTHER PAGE LOAD AUTOMATICALLY WHEN THE USER CLICKS "OK" ON ALERT???
+        window.location.href = "https://home.html"  //NOT WORKING! HOW DO I MAKE ANOTHER PAGE LOAD AUTOMATICALLY WHEN THE USER CLICKS "OK" ON ALERT???
       }
       else
       {
         window.location.href = "signup.js"
       }
+
           break;
         }
         else {

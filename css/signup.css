@@ -78,3 +78,10 @@ input[type=text], input[type=password] {
   padding:30px;
 }
 
+
+#link {
+  padding: 30px;
+  font-family:"Heebo", serif;
+  text-decoration: none;
+  color:black;
+}

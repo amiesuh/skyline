@@ -47,8 +47,6 @@ body{
   margin-left: 30px;
   color:#374785;
 }
-
-
 h1 {
   font-family:"Syncopate", monospace;
   margin-left: 30px;
@@ -82,6 +80,7 @@ h2{
   display: inline-block;
   padding-left: 50px;
   letter-spacing:5px;
+  text-align: center;
 }
 /* .header{
   border:none;
@@ -100,14 +99,10 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
   vertical-align:top;
-  background-color:#F8E9A1;
-  color:#24305E;
-  border-radius:10px;
-  z-index:999;
-  opacity:.75;
-  height: 50%;
+  background-color:white;
+  color:black;
   font-size: 24px;
-  width: 350px;
+  letter-spacing: 5px;
 }
 .cal{
   margin-left: 320px;
@@ -136,9 +131,18 @@ footer{
   left:0;
   position: static;
   width:100%;
+
 }
 h4{
   font-size: 14px;
   letter-spacing: 5px;
   font-weight:lighter;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover:not(.active){
+  background-color:white;
+  text-decoration: line-through;
 }
