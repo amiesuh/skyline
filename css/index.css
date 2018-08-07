@@ -43,6 +43,7 @@ footer{
   left:0;
   position: static;
   width:100%;
+  align-self: baseline;
 }
 h3{
   color: white;

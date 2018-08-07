@@ -1,7 +1,10 @@
 
 var register =  [ ];
+localStorage.setItem('register', JSON.stringify(register));
 
 register = JSON.parse(localStorage.getItem('register'));
+var signupAlertText = document.getElementById("signupAlert");
+var loginAlertText = document.getElementById("loginAlert");
 
 //localStorage.setItem('register', JSON.stringify(register));
 // // Name and Password from the register-form
@@ -13,19 +16,19 @@ function store() {
     localStorage.setItem('nm', nm.value);
     localStorage.setItem('pw', pw.value);
 
-    var data = {"un": nm.value, "pw": pw.value};
+    var data = {"nm": nm.value, "pw": pw.value};
     register.push(data);
     localStorage.setItem('register', JSON.stringify(register));
-    alert('Sign up successful!')
+
+    console.log(register)
+
+    signupAlertText.innerHTML = "Sign up successful! Please login below.";
+
     //alert(register[register.length - 1].un + " " + register[register.length - 1].pw);
 }
 
 // // check if stored data from register-form is equal to entered data in the   login-form
 function check() {
-//
-//     // stored data from the register-form
-    var storedName = localStorage.getItem('nm');
-    var storedPw = localStorage.getItem('pw');
 
 // //     // entered data from the login-form
     var userName = document.getElementById('userName').value;
@@ -33,33 +36,30 @@ function check() {
 
     var tf = false;
     for (var i in register) {
-      if (register[i].un == userName) {
+
+      if (register[i].nm == userName) {
         if (register[i].pw == userPw) {
-          // alert ("Login successful!");
-          // window.location.href='home.html';
-          tf = true;
 
-        if (window.confirm('Login success!'))
-      {
-        window.location.href = "https://home.html"  //NOT WORKING! HOW DO I MAKE ANOTHER PAGE LOAD AUTOMATICALLY WHEN THE USER CLICKS "OK" ON ALERT???
-      }
-      else
-      {
-        window.location.href = "signup.js"
-      }
+          loginAlertText.innerHTML = "Login successful! Loading homepage...";
+          setTimeout(function myFunction(){
+            window.location.href = "home.html";
+          }, 2000);
+          // if (window.confirm('Login success!')) {
+          //   window.location.href = "home.html";  //NOT WORKING! HOW DO I MAKE ANOTHER PAGE LOAD AUTOMATICALLY WHEN THE USER CLICKS "OK" ON ALERT???
+          // }
+          // else {
+          //   window.location.href = "signup.html";
+          // }
 
-          break;
         }
         else {
-          alert ("Incorrect password! Try again.");
-          tf = true;
-          break;
+          loginAlertText.innerHTML = "Incorrect password! Try again.";
         }
+        tf = true;
+        break;
       }
     }
     if(tf == false){
-      alert("Incorrect username! Try again.")
+      loginAlertText.innerHTML = "Incorrect username! Try again.";
     }
-
-
-
+  }
