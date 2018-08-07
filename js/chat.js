@@ -126,3 +126,59 @@ function searchEnglish(){
   }
   chatFrame.style.margin = "0 auto";
 }
+
+function searchScience(){
+  document.getElementById("processingtext").innerHTML = "Processing your chat request...!";
+  $("#processingtext").fadeIn("slow");
+  setTimeout(function myFunction(){}, 2000);
+  if(scienceClass.value == "bio"){
+    chatFrame.src = "http://skylinebiology.chatango.com";
+  }
+  else if(scienceClass.value == "chem"){
+    chatFrame.src = "http://skylinechemistry.chatango.com";
+  }
+  else if(scienceClass.value == "physics"){
+    chatFrame.src = "http://skylinephysics.chatango.com";
+  }
+  chatFrame.style.margin = "0 auto";
+}
+
+function searchHistory(){
+  document.getElementById("processingtext").innerHTML = "Processing your chat request...!";
+  $("#processingtext").fadeIn("slow");
+  setTimeout(function myFunction(){}, 2000);
+  if(historyClass.value == "ush"){
+    chatFrame.src = "http://skylineushistory.chatango.com";
+  }
+  else if(historyClass.value == "worldh"){
+    chatFrame.src = "http://skylineworldhistory.chatango.com";
+  }
+  else if(historyClass.value == "econ"){
+    chatFrame.src = "http://skylineeconomics.chatango.com";
+  }
+  else if(historyClass.value == "gov"){
+    chatFrame.src = "http://skylinegovernment.chatango.com";
+  }
+  chatFrame.style.margin = "0 auto";
+}
+function searchLang(){
+  document.getElementById("processingtext").innerHTML = "Processing your chat request...!";
+  $("#processingtext").fadeIn("slow");
+  setTimeout(function myFunction(){}, 2000);
+  if(langClass.value == "spanish"){
+    chatFrame.src = "http://skylinespanish.chatango.com";
+  }
+  else if(langClass.value == "french"){
+    chatFrame.src = "http://skylinefrench.chatango.com";
+  }
+  else if(langClass.value == "chinese"){
+    chatFrame.src = "http://skylinechinese.chatango.com";
+  }
+  else if(langClass.value == "korean"){
+    chatFrame.src = "http://skylinekorean.chatango.com";
+  }
+  else if(langClass.value == "japanese"){
+    chatFrame.src = "http://skylinejapanese.chatango.com";
+  }
+  chatFrame.style.margin = "0 auto";
+}
