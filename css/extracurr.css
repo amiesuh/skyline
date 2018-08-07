@@ -56,8 +56,8 @@ h1 {
 #map {
   height: 500px;
   width: 55%;
-  text-align: right;
-  margin-left: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 vol{
   margin-left: 600px;
@@ -96,8 +96,8 @@ a:hover{
 } */
 #art{
   text-align: center;
+  margin-left: auto;
   margin-right: auto;
-  margin-left: 520px;
   vertical-align:top;
   background-color:white;
   color:black;
@@ -105,7 +105,7 @@ a:hover{
   letter-spacing: 5px;
 }
 .cal{
-  margin-left:400px;
+  margin-left: 320px;
 }
 h3{
   display: inline-block;
