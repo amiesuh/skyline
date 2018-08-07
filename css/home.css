@@ -69,6 +69,16 @@ a:hover:not(.active){
   position:relative;
   height:100px;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover:not(.active) {
+  color:black;
+  text-decoration: line-through;
+}
+
 footer{
   background-color: black;
   text-align:center;
@@ -79,6 +89,7 @@ footer{
   bottom:0;
   left:0;
   position: absolute;
+
   width:100%;
   vertical-align: sub;
 }
@@ -91,4 +102,7 @@ h4{
   display:none;
   width:5000px;
   height:1000px;
+}
+#medspace{
+  height: 70px;
 }

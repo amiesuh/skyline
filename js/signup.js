@@ -21,6 +21,7 @@ function store() {
     var data = {"nm": nm.value, "pw": pw.value, "isActive": false};
     register.push(data);
     localStorage.setItem('register', JSON.stringify(register));
+
     console.log(register)
 
     signupAlertText.innerHTML = "Sign up successful! Please login below.";
@@ -40,6 +41,7 @@ function check() {
 
       if (register[i].nm == userName) {
         if (register[i].pw == userPw) {
+
           loginAlertText.innerHTML = "Login successful! Loading homepage...";
           register[i].isActive = true;
           var activeAccount = register[i];
@@ -53,6 +55,7 @@ function check() {
           // else {
           //   window.location.href = "signup.html";
           // }
+
         }
         else {
           loginAlertText.innerHTML = "Incorrect password! Try again.";

@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo");
-body{
-  margin: 0;
-}
 ul {
   list-style-type: none;
   margin:0;
@@ -36,7 +33,7 @@ li a:hover:not(.active) {
 
 .active {
   background-color:white;
-
+  color:black;
 }
 
 body{
@@ -57,20 +54,34 @@ h3{
   padding-left:20px;
 }
 a{
-  text-decoration: none;
+  text-decoration:none;
   color:black;
 }
 a:hover:not(.active){
   text-decoration:line-through;
+  color:black;
 }
 #space{
   display: inline-block;
-  padding-right:700px;
+  padding-right:825px;
 }
-#footer{
-  position:relative;
-  height:100px;
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
+/* Centered text */
+.center {
+    font-size: 36px;
+    letter-spacing:5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 footer{
   background-color: black;
   text-align:center;
@@ -80,9 +91,8 @@ footer{
   font-size:10px;
   bottom:0;
   left:0;
-  position:absolute;
+  position: fixed;
   width:100%;
-  vertical-align: sub;
 }
 h4{
   font-size: 14px;
@@ -96,7 +106,6 @@ h4{
   height:1000px;
 }
 
-
 #news {
   margin-left: 510px;
   margin-right: 300px;
@@ -108,7 +117,6 @@ h4{
   z-index:999;
   border-radius:10px;
   color: black;
-
 }
 
 .twitter-timeline {
@@ -128,117 +136,40 @@ h4{
   height: 50%;
   font-size: 24px;
 }
-/* #art{
-  font-size: 18px;
-  color:#24305E;
-  margin-top: 0px;
-} */
 #chat{
   font-size: 18px;
   color:black;
   margin-top: 0px;
 }
-/* #search{
-  background: #A8D0E6;
-  text-indent: 0px;
-  width: 500px;
-} */
-/* #title{
-  padding-right: 500px;
-  background: #A8D0E6;
-} */
-/* a {
-    text-decoration: none;
-    color: black;
-} */
-/* .header{
-  border:none;
-  background-color:#A8D0E6;
-  width: 100%;
-} */
-
-.dropbtn{
-  background-color:white;
-  color:black;
-  padding:16px;
-  font-size:20px;
-  cursor:pointer;
-  font-family:"Heebo", serif;
-  border-radius: 10px;
+#articles{
+  text-align:left;
+  font-size: 20px;
+  letter-spacing: 5px;
 }
-.dropbtn:hover, .dropbtn:focus {
-    background-color:white;
-}
-
-.dropbtn {
-    position: relative;
-    display: inline-block;
-}
-
 .articles{
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius:10px;
-    font-family:"Heebo", serif;
-
+  text-align:left;
+  font-size: 20px;
+  letter-spacing: 5px;
 }
-
-.articles a {
-    color:black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+#res{
+  font-family: "Heebo",serif;
+  margin-top:10px;
+  text-align:center;
+  width:100px;
+  font-size:24px;
+  z-index:999;
+  border-radius:10px;
+  color: black;
 }
-
-
-.articles a:hover {background-color:white;}
-
-.show {display: block;}
-
-
-
-
-.chatrooms{
-  background-color:white;
-  color:black;
-  padding:16px;
-  font-size:20px;
-  cursor:pointer;
-  font-family:"Heebo", serif;
-  border-radius: 10px;
-
+footer{
+  background-color: black;
+  text-align:center;
+  color:white;
+  letter-spacing: 5px;
+  border:none;
+  font-size:10px;
+  bottom:0;
+  left:0;
+  position:static;
+  width:100%;
 }
-.chatrooms:hover, .chatrooms:focus {
-    background-color:white;
-}
-
-.chats {
-    position: relative;
-    display: inline-block;
-}
-
-.chats {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.chats a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.chats a:hover {background-color: white;}
-
-.shows{display: block;}
