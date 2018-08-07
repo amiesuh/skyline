@@ -96,7 +96,7 @@ a:hover{
 } */
 #art{
   text-align: center;
-  margin:25px auto;
+  margin:0px auto;
   vertical-align:top;
   background-color:white;
   color:black;
@@ -150,7 +150,7 @@ footer{
 
 /* Centered text */
 .center {
-    font-size:25px;
+    font-size:36px;
     letter-spacing:5px;
     position: absolute;
     top: 50%;
@@ -161,6 +161,13 @@ h4{
   font-size: 14px;
   letter-spacing: 5px;
   font-weight:lighter;
+  text-align: center;
+}
+h4.title{
+  font-size: 28px;
+  letter-spacing: 15px;
+  font-weight:lighter;
+  text-align: center;
 }
 a{
   text-decoration: none;
