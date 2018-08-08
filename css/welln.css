@@ -39,6 +39,7 @@ li a:hover:not(.active) {
 body{
   font-family: "Heebo",serif;
   color:black;
+  margin: 0;
 }
 h2{
   font-family: "Heebo",serif;
@@ -81,7 +82,10 @@ a:hover:not(.active) {
   color:black;
   text-decoration: line-through;
 }
-
+#footer{
+  position:relative;
+  height:100px;
+}
 footer{
   background-color: black;
   text-align:center;
