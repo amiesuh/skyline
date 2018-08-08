@@ -4,6 +4,10 @@ var register =  [];
 //only turn on when you need to reset the register system
 // localStorage.setItem('register', JSON.stringify(register));
 
+if(localStorage.getItem('register') == null){
+  localStorage.setItem('register', JSON.stringify(register));
+}
+
 register = JSON.parse(localStorage.getItem('register'));
 var signupAlertText = document.getElementById("signupAlert");
 var loginAlertText = document.getElementById("loginAlert");
@@ -22,7 +26,7 @@ function store() {
     register.push(data);
     localStorage.setItem('register', JSON.stringify(register));
 
-    console.log(register)
+    console.log(register);
 
     signupAlertText.innerHTML = "Sign up successful! Please login below.";
 
