@@ -56,8 +56,10 @@ h1 {
   margin-left: 30px;
 } */
 
-
-#map {
+#map{
+  text-align: center;
+}
+#mapouter {
    height: 500px;
   width: 55%;
   text-align: right;
