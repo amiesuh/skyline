@@ -30,6 +30,9 @@ function store() {
 
     signupAlertText.innerHTML = "Sign up successful! Please login below.";
 
+    setTimeout(function myFunction(){
+      window.location.href = "signup.html";
+    }, 500);
     //alert(register[register.length - 1].un + " " + register[register.length - 1].pw);
 }
 
@@ -52,7 +55,7 @@ function check() {
           localStorage.setItem('activeAccount', JSON.stringify(activeAccount));
           setTimeout(function myFunction(){
             window.location.href = "home.html";
-          }, 2000);
+          }, 1000);
           // if (window.confirm('Login success!')) {
           //   window.location.href = "home.html";  //NOT WORKING! HOW DO I MAKE ANOTHER PAGE LOAD AUTOMATICALLY WHEN THE USER CLICKS "OK" ON ALERT???
           // }

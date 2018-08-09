@@ -13,6 +13,8 @@ function signOut(){
   localStorage.setItem('activeAccount', null);
 }
 
+
+
 // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
 
@@ -24,7 +26,10 @@ function signOut(){
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player(
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
